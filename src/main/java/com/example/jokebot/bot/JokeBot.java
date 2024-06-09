@@ -31,7 +31,7 @@ public class JokeBot extends TelegramLongPollingBot {
                     Joke joke = jokes.get(random.nextInt(jokes.size()));
                     sendMessage(chatId, joke.getContent());
                 } else {
-                    sendMessage(chatId, "No jokes available.");
+                    sendMessage(chatId, "Нет доступных шуток.");
                 }
             }
         }
